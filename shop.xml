@@ -1,0 +1,29 @@
+<catalog language="en-US">
+    
+    <page number="1">
+        <name>Iphone xs</name>
+        <price>1000</price>
+     <product>
+     </product>
+        <name>nokia xs</name>
+        <price>1000</price>
+     <product>
+     </product>
+        <name>Xiamomi xs</name>
+        <price>1000</price>
+
+     <product>
+     </product>
+
+    </page>
+
+    <page number="2">
+
+        ...
+        ...
+        
+    
+    </page>
+
+
+</catalog>
