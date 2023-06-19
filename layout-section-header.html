@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Layout Section | Headear | Cleaning services</title>
+   <style>
+        body {
+            font-family: Arial;
+        }
+        .services-promo {
+            border: 1px solid #777;
+            margin: 20px;
+
+            background-image: radial-gradient(
+                #ccf5ff,
+                  #1ad1ff 40%,
+                   transparent 41%
+            ),
+            radial-gradient(
+                #ccf5ff,
+                  #1ad1ff 40%,
+                   transparent 41%
+            );
+            background-size: 100px 100px, 50px 50px;
+            background-repeat: no-repeat;
+
+            background-position: 
+                0 0,
+                80% 200px;
+
+
+            animation: floating 5s 10 alternate linear;
+        }
+        /*descendant selector */
+        .services-promo h1 {
+            text-align: center;
+            color: #0080ff;
+            margin-bottom: 5px;
+        }
+        .services-promo h2 {
+            margin-left: 20%;
+            margin-top: 0;
+            color: #4da6ff;
+        }
+        .services-promo p {
+            margin-left: 20%;
+            margin-right: 20%;
+            color: #1a66ff;
+        }
+        .services-promo h3 {
+          margin-left: 15%;
+          margin-top: 40px;
+          color: #1a8cff;  
+        }
+        .services-promo ul {
+            margin-left: 20%;
+            padding: 0;
+            color: #0099cc;
+        }
+        .services-promo p:last-child {
+            margin-top: 40px;
+            font-size: 130%;
+
+        }
+        .services-promo a {
+            text-decoration: none;
+            background-color: #3399ff;
+            color: white;
+            padding: 10px 20px;
+        }
+        .services-promo a:hover {
+            background-color: #1a66ff;
+        }
+        @keyframes floating {
+            from {
+                background-position: 
+                0 0,
+                80% 230px;
+            }
+            to {
+                background-position: 
+                0 50px,
+                80% 200px;
+            }
+        }
+   </style>
+</head>
+<body>
+
+    <header class="services-promo">
+        <h1>Cleaning Services in your country</h1>
+        <h2>We do it fast<br/>and cheap...</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit natus maxime voluptas provident inventore reprehenderit at amet ab! Rerum itaque voluptatum dolorem fugiat dolor autem repellendus praesentium assumenda perspiciatis.</p>
+        <h3>Services</h3>
+        <ul>
+            <li>Lorem.</li>
+            <li>Quis.</li>
+            <li>Aliquam.</li>
+            <li>Vero.</li>
+            <li>Iusto.</li>
+        </ul>
+        <p>
+            Don't waste your time, book us <a href="">NOW</a>
+        </p>
+    </header>
+    
+</body>
+</html>

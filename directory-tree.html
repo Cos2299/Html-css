@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo selector | Directory Tree </title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .tree {
+            list-style-type: "┝";
+            font-size: 64px;
+        }
+        .folder {
+            color: white;
+            /*border: 1px solid red;*/
+            /*height: 64px;*/
+            padding: 24px 0px 24px 72px;
+
+            /*NEW*/
+
+            background-image: url(folder-2.png);
+            background-repeat: no-repeat;
+            line-height: 8px;
+            
+        }
+        .folder:last-child {
+            list-style-type: "┕";
+        }
+        .empty {
+            background-image: url(folder-1.png);
+        }
+        .name {
+            font-size: 18px;
+        }
+        .file {
+            color: white;
+            /*border: 1px solid red;*/
+            /*height: 64px;*/
+            padding: 24px 0px 24px 72px;
+
+            /*NEW*/
+
+            background-image: url(folder-3.png);
+            background-repeat: no-repeat;
+            line-height: 8px;
+            
+        }
+        .file:hover {
+            color: aqua;
+        }
+        .file:last-child {
+            list-style-type: "┕";
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul class="tree">
+        <li class="folder">
+            <div class="name">Project [Done]</div>
+            <!--nested list-->
+            <ul class="tree">
+                <li class="file"><div class="name">File 1</div></li>
+                <li class="file"><div class="name">File 2</div></li>
+            </ul>
+        </li>
+        <li class="folder">
+            <div class="name">Project [Now]</div>
+        </li>
+        <li class="folder empty">
+            <div class="name">Project [TBD]</div>
+        </li>
+    </ul>
+    
+</body>
+</html>

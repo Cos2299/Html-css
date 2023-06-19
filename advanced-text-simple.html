@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Advanced Selectors | Text Markupt</title>
+   <style>
+    body {
+        background-color: #222;
+        color: white;
+        font-family: Arial;
+    }
+    .line:first-child .world {
+       /* border: 1px solid green;*/
+        font-size: 40px;
+    }
+    .title .line:first-child .world span:first-child {
+        color: green;
+
+    }
+    .title .line:first-child .world span:nth-child(2) {
+        color: red;
+
+    }
+    .title .line:first-child .world span:nth-child(3) {
+        color: blue;
+
+    }
+    .title .line:first-child .world span:nth-child(4) {
+        color: salmon;
+
+    }
+
+
+   </style>
+</head>
+<body>
+    
+    <h1 class="title">
+        <div class="line">
+            <span class="world">
+                <span>F</span><span>i</span><span>r</span><span>s</span><span>t</span> 
+            </span>   <span class="world">Line</span>
+        </div>
+        <div class="line">
+            <span class="world">Second</span> <span class="world">Line</span>
+        </div>
+    </h1>
+</body>
+</html>

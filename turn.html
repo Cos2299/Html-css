@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Turn Image</title>
+     <style>
+        body {
+            text-align: center;
+        }
+        button {
+            width: 100px;
+            height: 100px;
+        }
+        img {
+            margin-top: 20px;
+        }
+
+        button:active + br + #image {
+            transform: rotate(90deg);
+            transition: 1s;
+        }
+
+     </style>
+</head>
+<body>
+
+    <button>
+        <img src="arrow-right-top.svg" alt="">
+    </button>
+    <br/>
+    <img id="image" src="https://fastly.picsum.photos/id/756/500/500.jpg?hmac=rZynM_D3hiy3CIW1AZZNAr6m3jBex9SM1bFvp5mKPso" alt="">
+    
+
+</body>
+</html>

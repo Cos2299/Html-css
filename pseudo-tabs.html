@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Selectors</title>
+    <style>
+        .tabs {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+        }
+        .tabs-item {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+
+            width: 70px;
+            height: 80px;
+            vertical-align: top;
+            text-align: center;
+            border-radius: 5px;
+
+            /*NEW*/
+            transition: 0.30s;
+
+        }
+        .tabs-item:hover {
+            background-color: #999;
+        }
+        .tabs-link {
+            text-decoration: none;
+            color: #222;
+        }
+        .tabs-obtion {
+            font-size: 32px;
+            line-height: 6px;
+
+            background-color: #999;
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+
+
+            transform: translateX(45px) translateY(-75px);
+
+
+            /* NEW */
+            opacity: 0;
+            transition: 0.20s;
+        }
+        .tabs-obtion:hover {
+            opacity: 1.0;
+
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="tabs">
+        <li class="tabs-item">
+            <a class="tabs-link" href="#">
+                <img src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/48/Github-icon.png"/>
+                <br/>
+                username
+            </a>
+            <div class="tabs-obtion">
+                .
+                <br/> 
+                .
+                <br/>
+                .
+            </div>
+        </li>
+        <li class="tabs-item">2</li>
+        <li class="tabs-item">3</li>
+    </ul>
+    
+</body>
+</html>

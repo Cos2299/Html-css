@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu | Pure Css</title>
+    <style>
+        .dropdown .list {
+            display: none;
+        }
+        .dropdown label {
+            /*NEW*/
+            user-select: none;
+        }
+        .dropdown input {
+            display: none;
+        }
+        .dropdown input:checked + label + .list {
+            display: block;
+        }
+    .dropdown input:checked + label::after {
+        content: "▲";
+    }
+
+        .dropdown label::after {
+            content: "▼";
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="dropdown">
+
+        <input type="checkbox" id="toggler"/>
+
+        <label for="toggler">
+            Dropwdown <!--after--> 
+        </label>
+
+        
+        <ul class="list">
+            <li><a href="">item1</a></li>
+            <li><a href="">item2</a></li>
+            <li><a href="">item3</a></li>
+        </ul> 
+    </nav>
+    
+</body>
+</html>
