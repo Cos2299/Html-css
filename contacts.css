@@ -1,0 +1,113 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+
+        background-color: #333;
+
+        /*Design Palette*/
+        --Melrose: #B5B0D9;
+        --FreeSpeechBlue: #4D49BF;
+        --MediumSlateBlueD: #6863F2;
+        --MediumSlateBlueL: #9C99F2;
+        --WhiteSmoke: #F2F2F2;
+        --DarkGrey: #333;
+        --DarkSilver:#555; 
+
+        --Height: 1136px;
+        --Width: 640px;
+}
+
+/*Phone*/
+.mockphone {
+    background-color: var(--DarkSilver);
+    transform: scale(0.8);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+
+.mockphone .screen {
+    width: var(--Width);
+    height: var(--Height);
+
+    border: 1px solid var(--DarkGrey);
+
+}
+
+/*Viber*/
+#viber-app {
+    background-color: var(--WhiteSmoke);
+    width: 100%;
+    /*for a real screen vw,vh*/
+    height: 100vh;
+    position: relative;
+    font-size: 25px;
+}
+#viber-app header {
+    height: 7%;
+    width: 100%;
+    
+    background-color: brown;
+
+
+}
+#viber-app section {
+    height: 86%;
+    width: 100%;
+    background-color: darkorange;
+    
+    top: 7%;
+
+}
+#viber-app footer {
+    height: 7%;
+    width: 100%;
+    background-color: brown;
+}
+#viber-app .contacts {
+    height: 100%;
+
+    overflow-y: scroll;
+
+    scroll-snap-type: y mandatory;
+}
+#viber-app .contacts li {
+    height: calc(100% / 8);
+    border-top: 1px solid var(--DarkSilver);
+    border-bottom: 1px solid var(--DarkSilver);
+
+    box-sizing: border-box;
+
+    scroll-snap-align: start;
+}
+
+/*Scroll bar design*/
+#viber-app .contacts::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--MediumSlateBlueD);
+
+
+    position: fixed;
+    display: none;
+}
+
+#viber-app .contacts:hover::-webkit-scrollbar,
+#viber-app .contacts:active::-webkit-scrollbar {
+    display: block;
+}
+
+/*Adaptive*/
+
+@media (orientation: landscape) {
+    #viber-app .contacts li {
+        height: calc(100% / 3.7);
+    }
+}
+
+@media (orientation: landscape) and (min-aspect-rotaion: 18/10) {
+    #viber-app .contacts li {
+        height: calc(100% / 2.7);
+    }
+}

@@ -1,0 +1,49 @@
+/*Mobile*/
+body {
+    background-color: darkgrey;
+}
+.carousel {
+    width: 60%;
+    margin: 10% auto;
+
+
+    border: 1px solid red;
+}
+@media (min-width: 800px) {
+    .carousel {
+        width: 700px;
+        margin: 70px auto;
+    }
+}
+@media (min-width: 1300px) {
+    .carousel {
+        width: 800px;
+        margin: 70px auto;
+    }
+}
+
+.carousel > div {
+    /* border: 1px solid green; */
+}
+.carousel > div img {
+    widows: 100%;
+}
+.carousel .control {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.carousel .control a {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background-color: red;
+    color: transparent;
+    border-radius: 100%;
+}
+.control a:first-child {
+    background-image: url(arrow_circle_left_FILL0_wght400_GRAD0_opsz48.svg);
+}
+.control a:last-child {
+    background-image: url(arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg);
+}

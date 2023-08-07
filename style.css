@@ -1,51 +1,53 @@
 body {
-    background-color: #234;
+    /*background-color: #333;*/
+
+    background-image: url(papper.png);
+    background-repeat: repeat;
 }
 
-.preloader {
-    border: 1px dotted red;
+.paper-effect {
+    width: 1000px;
+    height: 600px;
 
-    width: 200px;
-    height: 200px;
+    border: 10px solid white;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: auto;
+
+    perspective: 1000px;
 }
+.paper-effect > div {
+    border: 1px solid black;
+    width: 198px;
+    height: 598px;
+    float: left;
 
-.preloader .lg {
-    border: 5px solid #999;
-    border-top-color: transparent;
-    border-radius: 105px;
-
- 
-    width: 200px;
-    height: 200px;
-
-
-    /*NEW*/
-    box-sizing: border-box;
-
-    animation: rot 3s infinite linear;
+    background-image: url(fall.jpg);
 }
+.paper-effect>div:nth-child(2) {
+    background-position: -200px 0px;
 
-.preloader .sm {
-    border: 5px solid #2dd;
-    border-radius: 85px;
-    border-right-color: transparent ;
+    transform:
+    translateX(-50px) 
+    rotateY(-45deg) 
+    scaleY(1.07);
 
-    width: 160px;
-    height: 160px;
-
-
-
-    /*HW2 center h/v small (margin,transform)*/
-    /*H3 animate backward*/
 }
+.paper-effect>div:nth-child(3) {
+    background-position: -400px 0px;
 
-/*NEW*/
-/*CSS ANIMATION*/
-@keyframes rot {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg)
-    }
+}
+.paper-effect>div:nth-child(4) {
+    background-position: -600px 0px;
+
+}
+.paper-effect>div:nth-child(5) {
+    background-position: -800px 0px;
+
 }

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+.navbar {
+    background: #777;
+    color: white;
+}
+
+.navbar-notification label {
+    background-image: url(bell.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+
+}

@@ -1,0 +1,43 @@
+li {
+    list-style: none;
+    
+}
+body {
+    --light-color: orange;
+    --dark-color: #333;
+    --text-color: white;
+    /*font-size: 30px;*/
+}
+
+body {
+    background-color: var(--dark-color);
+}
+#bottom-menu {
+    /*border: 1px solid red;*/
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+
+    overflow: hidden;
+    
+}
+#bottom-menu a {
+    background-color: var(--light-color);
+    display: block;
+    padding: 0.5em;
+    margin-bottom: 0.2em;
+    border-radius: 100%;
+    color: var(--text-color);
+
+    transform: translateY(8em);
+}
+
+#bottom-menu:target a {
+    transform: translateY(0);
+}
+
+#bottom-menu li:last-child a {
+    margin-bottom: 0;
+}
+
+

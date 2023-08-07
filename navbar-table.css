@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+    About font families/FONTS
+    web font face
+*/
+a {
+    text-decoration: none;
+    
+}
+
+/*---------------------------------*/
+body {
+    background-color: #333;
+}
+
+.navbar {
+    background-color: #555;
+
+    display: table;
+    width: 100%;
+}
+.navbar ul {
+    display: table-row;
+}
+.navbar li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.navbar li:first-child {
+    padding: 0 100px 0 20px ;
+    text-align: left;
+}
+.navbar li:last-child {
+    padding: 0 20px 0 100px;
+    text-align: right;
+}
+
+.navbar a {
+    color: white;
+}
