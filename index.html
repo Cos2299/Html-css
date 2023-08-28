@@ -3,42 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar Flex adaptive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans:wght@400;700&family=Poppins:wght@100;200;300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+        <nav class="navbar scrolled" id="main-menu">
 
-    <section class="news">
-        <article class="main">
-            <h1>News Title 1</h1>
-            <figure>
-            <img src="https://fastly.picsum.photos/id/927/700/500.jpg?hmac=k1IRMzoJ8m_9EoqKPnw7ZZ8s7a61HXfsjJLvqMt4Kd8" alt="">
-            </figure>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut repellendus pariatur corrupti totam, quas quos similique. Rerum officia recusandae, rem, sequi a doloribus adipisci modi eligendi harum iste soluta perspiciatis placeat quis, debitis quibusdam laborum sunt quia sapiente earum error quo voluptate eius? Alias praesentium dignissimos est nulla? Enim, fugiat.</p>
-            <p>Modi doloribus nemo, dolor eveniet consequuntur perspiciatis. Quaerat deleniti harum, voluptate unde mollitia nostrum ullam assumenda blanditiis totam expedita maiores dolores nesciunt animi et quia nisi libero aspernatur! Suscipit dignissimos sint amet omnis quam enim illum eaque, perferendis nemo numquam inventore autem rem, aspernatur minus totam mollitia ipsam vitae tempore.</p>
-        
-            <div><span>published on: </span>18:00 <br/>
-            <span>published by:</span><a href="">Some Author</a></div>   
-        </article>
-        <article>
-            <h2>News Title 2</h2>
-            <img src="https://fastly.picsum.photos/id/893/400/500.jpg?hmac=LsZexq80-kBn33WMfBshjTId6s1vR4_XfOv9dQOrnYk" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, vel impedit fugit quibusdam hic expedita eius deleniti minima eum, beatae voluptatem. Sit sapiente fuga reprehenderit ipsam doloribus facere, eos veniam eum adipisci impedit minus explicabo, illum cupiditate molestiae non, neque blanditiis rem laborum? Laboriosam, qui dolores enim porro consectetur deserunt?</p>
-            <p>Accusantium, recusandae vel? Accusamus dicta labore vitae officiis, dolorum nesciunt, pariatur deserunt sint rem amet cupiditate animi tempore voluptates minus quaerat fuga magni eius facilis quas voluptatibus optio aspernatur rerum autem quod! Quasi quidem velit molestiae autem laborum aspernatur, omnis laudantium? Commodi possimus minus, repellendus repudiandae porro iusto culpa a.</p>
-        
-            <div><span>published on: </span>18:10 <br/>
-            <span>published by:</span><a href="">Some Author</a></div>
-        </article>
-        <article>
-            <h3>News Title 3</h3>
-            <img src="https://fastly.picsum.photos/id/1079/400/500.jpg?hmac=ZqdshThxjbAz190qq3L_AZbovsIoX3RnPl5k9CZs5N4" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quisquam consectetur eaque, maxime necessitatibus modi culpa soluta et sapiente corporis, at inventore nesciunt blanditiis fuga, ipsa dolore itaque. Excepturi itaque ipsam accusamus provident eos possimus rem atque magnam nobis consectetur saepe, fuga earum voluptates? Dicta saepe perspiciatis nam temporibus dolores.</p>
-            <p>Et, aspernatur molestias voluptate neque dignissimos necessitatibus est ad aliquid similique, eius accusamus nam doloribus? Fuga est hic cupiditate repudiandae non fugit placeat corrupti delectus culpa sunt omnis voluptate corporis earum quasi numquam, ex accusantium ullam rerum. Vel necessitatibus dignissimos, sint aliquid aliquam fuga labore veritatis quia, error optio dolorum.</p>
-        
-            <div><span>published on: </span>18:20 <br/>
-            <span>published by:</span><a href="">Some Author</a></div>
-        </article>
-    </section>
+            <a href="">
+
+                <picture>
+
+                    <source
+                        srcset="logo128.png"
+                        media="(min-width: 461px)"
+                    >
+
+                    <img src="logo-64.png" 
+                    alt="battfield logo">
+                </picture>
+
+
+            </a>
+
+            <a class="toggler" href="#main-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <ul>
+                <li><a href="">Forum</a></li>
+                <li><a href="">Top players</a></li>
+                <li><a href="">Sign up</a></li>
+            </ul>
+        </nav>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                    $(window).scroll(function() {
+                        var windowYmax = 50;
+                        var scrolledY = $(window).scrollTop();
+                        
+                    if (scrolledY > windowYmax) {
+                    
+                        $('.navbar').addClass("scrolled");
+                    } else {
+                        $('.navbar').removeClass("scrolled");
+                        
+                    }
+                    });
+            </script>
     
 </body>
 </html>
